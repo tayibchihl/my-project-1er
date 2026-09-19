@@ -1,0 +1,20 @@
+Project Structure
+App
+ -Header
+ -Main
+  -Home
+    -card
+    -card
+    -card
+  -Courses
+    -section Header
+    -Courses
+    -Courses
+    -Courses
+  -Reviews
+    -section Header
+    -Reviews
+    -Reviews
+    -Reviews
+  -join us
+ -Footer

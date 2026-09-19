@@ -1,0 +1,397 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+:root {
+  --dark-blue: #252b42;
+  --red: #e74040;
+  --light-pink: #fdf6f6;
+  --green: #2dc071;
+  --light-green: #e8f5e9;
+  --sky-blue: #23a6f0;
+  --light-sky-blue: #e3f2fd;
+  --light-gray: #737373;
+  --yellow: #f3cd03;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 2rem;
+}
+
+.text-primary {
+  color: var(--sky-blue);
+  font-weight: 600;
+  font-size: 14px;
+}
+
+/* Header & Navbar */
+#header {
+  background-color: var(--dark-blue);
+}
+
+.navbar {
+  max-width: 1100px;
+  margin: auto;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.navbar ul {
+  display: flex;
+}
+
+.navbar ul li a {
+  color: #fff;
+  font-size: 14px;
+  padding: 0 10px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.navbar ul li a:hover {
+  color: var(--red);
+}
+
+.navbar .account .btn-join {
+  background-color: var(--sky-blue);
+  padding: 10px 20px;
+  margin-left: 25px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  color: #fff;
+  display: inline-block;
+}
+
+.navbar .account .btn-join svg {
+  font-size: 12px;
+  margin-left: 5px;
+  vertical-align: middle;
+}
+
+/* Home Section */
+#home {
+  background-color: var(--dark-blue);
+  padding: 5rem 0;
+}
+
+.home-header {
+  text-align: center;
+  color: #fff;
+  max-width: 450px;
+  margin: auto;
+}
+
+.home-header span {
+  color: var(--red);
+  font-weight: 600;
+}
+
+.home-header h1 {
+  font-size: 40px;
+  font-weight: 600;
+  margin: 20px 0;
+  color: var(--light-pink);
+}
+
+.home-header p {
+  margin-bottom: 30px;
+  color: var(--light-pink);
+}
+
+.btn {
+  padding: 10px 20px;
+  border-radius: 5px;
+  display: inline-block;
+  font-weight: 500;
+}
+
+.btn-red {
+  background-color: var(--red);
+  color: #fff;
+  margin-right: 10px;
+}
+
+.btn-transparent {
+  border: 1px solid var(--red);
+  color: var(--red);
+}
+
+.card-container {
+  margin-top: 5rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.card {
+  padding: 25px;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.card .icon {
+  padding: 12px;
+  display: inline-block;
+  border-radius: 10px;
+}
+
+.card .icon svg {
+  font-size: 25px;
+}
+
+.card h2 {
+  font-size: 18px;
+  color: var(--dark-blue);
+  margin-top: 15px;
+}
+
+.card .line {
+  width: 50px;
+  height: 2px;
+  display: block;
+  background-color: var(--red);
+  margin: 15px 0;
+}
+
+.card p {
+  font-size: 14px;
+}
+
+/* Section Header Component */
+.section-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.section-header h2 {
+  font-size: 35px;
+  margin: 15px 0;
+  color: var(--dark-blue);
+}
+
+.section-header p {
+  color: var(--light-gray);
+}
+
+/* Courses Section */
+.courses-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.course {
+  background-color: #fff;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.course img {
+  width: 100%;
+}
+
+.course .content {
+  padding: 20px;
+  font-size: 14px;
+  color: var(--light-gray);
+}
+
+.course-field {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.course-field .department {
+  color: var(--sky-blue);
+  font-weight: 600;
+}
+
+.course-field .rating {
+  background-color: var(--dark-blue);
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 20px;
+}
+
+.course-field .rating svg {
+  color: var(--yellow);
+}
+
+.course h3 {
+  margin: 10px 0;
+  color: var(--dark-blue);
+}
+
+.sales {
+  margin: 10px 0;
+  font-weight: 600;
+}
+
+.price .discount {
+  margin-right: 10px;
+  font-weight: 600;
+}
+
+.course-info {
+  display: flex;
+  align-items: center;
+  margin: 15px 0;
+}
+
+.course-info p {
+  margin-right: 10px;
+}
+
+.course-info svg {
+  color: var(--sky-blue);
+  font-size: 20px;
+  vertical-align: middle;
+  margin-right: 3px;
+}
+
+.btn-learn {
+  padding: 10px 20px;
+  border: 1px solid var(--sky-blue);
+  color: var(--sky-blue);
+  border-radius: 25px;
+  font-weight: 500;
+  display: inline-block;
+}
+
+/* Reviews Section */
+#reviews {
+  padding-bottom: 7rem;
+}
+
+.riten {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.stars {
+  display: block;
+  text-align: center;
+  font-size: 20px;
+}
+
+.stars svg {
+  color: var(--yellow);
+}
+
+.review .description {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 14px;
+  color: var(--light-gray);
+}
+
+.person {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.person img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+/* Join Us Section */
+#joinus {
+  background-color: var(--dark-blue);
+  padding: 6rem 0;
+}
+
+.joinus .content {
+  max-width: 600px;
+  margin: auto;
+  text-align: center;
+  color: #fff;
+}
+
+.joinus h2 {
+  font-size: 35px;
+  margin: 15px 0;
+}
+
+.joinus form {
+  margin-top: 4rem;
+  position: relative;
+}
+
+.joinus form input {
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  font-size: 12px;
+  width: 100%;
+}
+
+.joinus form button {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 12px;
+  background-color: var(--sky-blue);
+  color: #fff;
+  border: none;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+/* Footer Section */
+#footer {
+  padding: 4rem 0;
+}
+
+.footer-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.col h2 {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.col ul li {
+  margin-bottom: 10px;
+}
+
+.social a {
+  margin-right: 10px;
+  font-size: 20px;
+}
