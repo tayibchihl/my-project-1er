@@ -33,7 +33,7 @@ export const cardData = [
 export const coursesData = [
   {
     id: 1,
-    img: "/images/grap-design.png",
+    img: `${import.meta.env.BASE_URL}images/type1.png`, 
     department: "Graphic Design",
     rating: 4.7,
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
@@ -45,7 +45,7 @@ export const coursesData = [
   },
   {
     id: 2,
-    img: "/images/graph-design.png",
+    img: `${import.meta.env.BASE_URL}images/type2.png`,
     department: "Graphic Design",
     rating: 4.7,
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
@@ -57,7 +57,7 @@ export const coursesData = [
   },
   {
     id: 3,
-    img: "/images/graphic-design.png",
+    img: `${import.meta.env.BASE_URL}images/type3.png`,
     department: "Graphic Design",
     rating: 4.7,
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
@@ -74,7 +74,7 @@ export const ritenData = [
   {
     id: 1,
     stars: 5,
-    img: "/images/user1.png",
+    img: `${import.meta.env.BASE_URL}images/user1.png`,
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     name: "User Name",
     job: "Software Engineer",
@@ -82,7 +82,7 @@ export const ritenData = [
   {
     id: 2,
     stars: 4,
-    img: "/images/user2.png",
+    img: `${import.meta.env.BASE_URL}images/user2.png`,
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     name: "User Name",
     job: "Graphic Designer",
@@ -90,7 +90,7 @@ export const ritenData = [
   {
     id: 3,
     stars: 5,
-    img: "/images/user3.png",
+    img: `${import.meta.env.BASE_URL}images/user3.png`,
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     name: "User Name",
     job: "Web Developer",
